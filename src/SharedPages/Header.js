@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <div className="navbar bg-base-100">
-      <div className="navbar-start">
+    <div className="navbar bg-base-100 ">
+      <div className="lg:navbar-start flex justify-between">
         <div className="dropdown">
           <label tabIndex="0" className="btn btn-ghost lg:hidden">
             <svg
@@ -40,9 +40,12 @@ const Header = () => {
             </li>
           </ul>
         </div>
-        <a className="btn btn-ghost normal-case text-xl">Task Management</a>
+        <a href="/home" className="normal-case text-xl">Task Management</a>
       </div>
-      <div className="navbar-center hidden lg:flex">
+
+
+
+      <div className="navbar-right hidden lg:flex">
         <ul className="menu menu-horizontal p-0">
           <li>
             <Link to="/home"> Home</Link>

@@ -61,14 +61,14 @@ const Home = () => {
   return (
     <>
     {/* Current date task management */}
-    <div className="lg:p-12 lg:my-5 p-8 bg-gray-200">
+    <div className="lg:p-24 lg:my-5 p-8 bg-gray-200">
       <h1 className="text-3xl text-green-500 my-4 text-center lg:text-left">
         Add your Task in Today
       </h1>
       
       <textarea
         onKeyPress={currentDayTask}
-        className="textarea textarea-bordered h-24 w-full"
+        className="textarea textarea-bordered h-24  w-full"
         name="textarea"
       ></textarea>
 
@@ -79,7 +79,7 @@ const Home = () => {
     </div>
 
     {/* Next date task management */}
-    <div className="lg:p-12 lg:my-5 p-8 bg-gray-200">
+    <div className="lg:p-24 lg:mt-5 p-8 bg-gray-200">
       <h1 className="text-3xl text-green-500 my-4 text-center lg:text-left">
         Add your Task in {nextDate}
       </h1>

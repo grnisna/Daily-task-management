@@ -5,6 +5,7 @@ import Calender from './components/Calender/Calender';
 import ComplatedTask from './components/ComplatedTask/ComplatedTask';
 import Home from './components/Home/Home';
 import Todo from './components/TaskManagement/Todo';
+import Footer from './SharedPages/Footer';
 import Header from './SharedPages/Header';
 
 const App = () => {
@@ -18,6 +19,7 @@ const App = () => {
         <Route path='/complatedtask' element={<ComplatedTask></ComplatedTask>}></Route>
         <Route path='/calender' element={<Calender></Calender>}></Route>
       </Routes>
+      <Footer></Footer>
     </div>
   )
 }
