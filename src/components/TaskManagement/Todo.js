@@ -6,14 +6,14 @@ const Todo = () => {
   console.log(nextTask);
 
   useEffect(() => {
-    const url = `http://localhost:5000/currentDay`;
+    const url = `https://lower-toonie-73993.herokuapp.com/currentDay`;
     fetch(url)
       .then((res) => res.json())
       .then((data) => setCurrentTask(data));
   }, []);
 
   useEffect(() => {
-    const url = `http://localhost:5000/nextDay`;
+    const url = `https://lower-toonie-73993.herokuapp.com/nextDay`;
     fetch(url)
       .then((res) => res.json())
       .then((data) => setNextTask(data));

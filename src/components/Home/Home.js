@@ -15,7 +15,7 @@ const Home = () => {
           date: currentDate
         };
 
-        const url = `http://localhost:5000/currentDay`;
+        const url = `https://lower-toonie-73993.herokuapp.com/currentDay`;
         fetch(url, {
           method: "POST",
           headers: { "content-type": "application/json" },
@@ -37,7 +37,7 @@ const Home = () => {
         date: nextDate
       };
 
-      const url = `http://localhost:5000/nextDay`;
+      const url = `https://lower-toonie-73993.herokuapp.com/nextDay`;
       fetch(url, {
         method: "POST",
         headers: { "content-type": "application/json" },
